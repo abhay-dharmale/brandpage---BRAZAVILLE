@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#main{
+    height: 100vh;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background-color: transparent;
+    padding: 20px 50px;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+}
+
+nav .logo h1{
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    color: #3b533b;
+}
+
+nav .logo p{
+    font-size: 10px;
+    text-align: right;
+    line-height: 1;
+    letter-spacing: 2px;
+    color: #3b533bbe;
+}
+
+nav .navItems{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-right: -140px;
+    color: #3b533b;
+    text-transform: uppercase;
+}
+
+
+nav .navItems h4{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+nav .search{
+    font-weight: 800;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.hero-section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.hero-section img{
+    position: absolute;
+    right: 25%;
+    top: 20%;
+    z-index: 999;
+    height: 550px;
+}
+
+.hero-section .left{
+    height: 100%;
+    width: 65%;
+    background-color: #feedd1;
+    position: relative;
+}
+
+.hero-section .left h1{
+    margin: 200px 0 0 45px;
+    height: 35%;
+    width: 86%;
+    font-size: 130px;
+    text-transform: uppercase;
+    line-height: 0.8;
+    color: #3b533b;
+}
+
+.hero-section .left h1 span{
+    font-size: 14px;
+    color: #3b533b81;
+}
+
+.hero-section .left p{
+    margin: -48px 0 10px 55px;
+    width: 73%;
+    height: 70px;
+    text-transform: uppercase;
+    color: #3b533b;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.hero-section .left button{
+    margin: 1px 0 10px 55px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #72AD8D;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.hero-section .left i{
+    position: absolute;
+    font-size: 25px;
+    bottom: 5%;
+    left: 55%;
+}
+
+.hero-section .right{
+    height: 100%;
+    width: 45%;
+    background-color: #89aa45;
+    /* background-image: url(https://img.freepik.com/free-vector/falling-tea-leaves-realistic-green-foliage-flying_107791-17151.jpg?size=626&ext=jpg&ga=GA1.1.44283530.1696849765&semt=ais); */
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-section .right img{
+    background-repeat: repeat;
+    z-index: 9;
+    background-color: transparent;
+    object-fit: cover;
+    position: absolute;
+    height: 50%;
+    left: 0;
+    top: 0;
+}
+
+.hero-section .right img:nth-child(2){
+    top: 50%;
+    transform: rotate(80deg);
+}
+
+.hero-section .right img:nth-child(3){
+    top: 30%;
+    left: -70%;
+    height: 500px;
+    transform: rotate(60deg);
+}
+
+.hero-section .right .links{
+    position: absolute;
+    height: 10%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 1%;
+    right: 5%;
+    font-weight: 600;
+    color: #fff;
+}
